@@ -28,8 +28,10 @@ The final **Logistic Regression** classifier is trained on [loanapp.csv](file://
 *   `loan.ipynb` - Jupyter Notebook for research and exploration.
 *   `loanapp.csv` - Raw dataset containing 1,000 applicant loan records.
 *   `train_model.py` - Pipeline training and serialization script.
-*   `app.py` -  Application dashboard code.
-*   `requirements.txt` - Project dependencies list.
+*   `app.py` - Application dashboard code (clean UI, sidebar removed).
+*   `requirements.txt` - Project dependencies list (pinned for environment consistency).
+*   `runtime.txt` - Python runtime version definition for Streamlit Cloud.
+*   `.streamlit/config.toml` - Streamlit configurations enforcing light mode styling.
 *   `loan_model_pipeline.joblib` - Serialized model pipeline dictionary (imputers, encoders, scaler, classifier, and column names metadata).
 
 ---
