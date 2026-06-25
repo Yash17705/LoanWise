@@ -29,6 +29,7 @@ The final **Logistic Regression** classifier is trained on [loanapp.csv](file://
 *   `loanapp.csv` - Raw dataset containing 1,000 applicant loan records.
 *   `train_model.py` - Pipeline training and serialization script.
 *   `app.py` -  Application dashboard code.
+*   `requirements.txt` - Project dependencies list.
 *   `loan_model_pipeline.joblib` - Serialized model pipeline dictionary (imputers, encoders, scaler, classifier, and column names metadata).
 
 ---
@@ -38,7 +39,7 @@ The final **Logistic Regression** classifier is trained on [loanapp.csv](file://
 ### 1. Prerequisites
 Ensure you have Python installed, then install the required dependencies:
 ```bash
-pip install streamlit joblib scikit-learn pandas numpy
+pip install -r requirements.txt
 ```
 
 ### 2. Train the Model and Save the Pipeline
