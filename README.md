@@ -2,6 +2,8 @@
 
 An interactive machine learning-powered web application that evaluates loan applicants' creditworthiness in real-time. Built using Python, Scikit-Learn, and Streamlit.
 
+🔗 **Live Demo**: [loanwise-senpai.streamlit.app](https://loanwise-senpai.streamlit.app)
+
 ---
 
 ## 🚀 Features & Project Overview
