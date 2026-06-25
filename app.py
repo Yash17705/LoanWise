@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 # Set Page Config
 st.set_page_config(
@@ -71,7 +72,9 @@ st.markdown("""
 # Load Pipeline
 @st.cache_resource
 def load_pipeline():
-    return joblib.load('loan_model_pipeline.joblib')
+    base_dir = os.path.dirname(__file__)
+    pipeline_path = os.path.join(base_dir, 'loan_model_pipeline.joblib')
+    return joblib.load(pipeline_path)
 
 try:
     pipeline = load_pipeline()
